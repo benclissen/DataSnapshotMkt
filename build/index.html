@@ -1,0 +1,214 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/styles.css" />
+      <title>Data Snapshot - SportBusiness.com</title>
+    </head>
+    <body>
+
+      <header class="w-full justify-center bg-cover bg-center" style="background-image:url(./images/GettyImages-545945856.jpg);">
+        <div class="bg-teal bg-opacity-80">
+          <div class="xl:container mx-auto lg:p-32 p-5 text-center" >
+            <h1 class="border-white">UEFA’s Official Sponsors & Top 5 European FA’s Sponsorship index</h1>
+              <div class="w-2/3 mx-auto">
+                <p>
+                  With Euro 2020 almost upon us, we take a look at the value of UEFA’s
+                  sponsorship deals and breakdown the top 5 European FA’s (by value) and
+                  their five biggest deals. We also look in-depth at where sponsorship
+                  revenue comes, both by geography and industry sector.
+                </p>
+                <p>
+                  This data was first published in SportBusiness Sposorship. For more
+                  information on our global sponsorship deals data, 400+ activation
+                  cases studies and daily news service please visit
+                  www.sportbusiness.com/sponsorship or call us to request a demo: 000
+                  0000 0000.
+                </p>
+              </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="container mx-auto flex items-center justify-between px-4 py-2">
+        <div class="flex-1 w-24 text-black px-3 py-10 rounded-md mr-1 mb-1 text-center">
+          <h2 class="text-black border-black">UEFA National Team Football Offical Sponsors</h2>
+          <canvas id="chart1" class="object-contain w-min"></canvas>
+        </div>
+        <div class="flex-none w-32 xl:w-60 text-black px-3 py-2 rounded-md mx-10 mb-1 text-center">
+          <span class="font-extrabold text-xl">11 Sponsors</span>
+          <img src="./images/UEFA.png" alt="UEFA Logo" class="object-contain my-5">
+          <span class="font-extrabold text-xl">€176m<br />
+            Total Value</span>
+        </div>
+        <div class="flex-1 w-24 text-black px-3 py-2 rounded-md mr-1 mb-1 text-center">
+          <h2 class="text-black border-black" >UEFA Euro 2020 Offical Sponsors</h2>
+          <canvas id="chart2" class="object-contain w-min"></canvas>
+        </div>
+      </section>
+
+      <section class="w-full relative overflow-hidden bg-teal z-auto rotate-45">
+        <img src="./images/europe.svg" alt="Europe Map" class="z-1 fill-current text-white absolute w-full h-full right-0 top-0 opacity-20 object-cover object-right-bottom">
+        <div class="container mx-auto pt-10 z-4 inset-0 relative">
+          <div class="grid w-full grid-flow-col grid-cols-3  gap-4 mx-auto justify-items-center mb-4" >
+            <div id="England" class="teamBox">
+              <div class="text-center bg-teamcolor-england overflow-y-auto" >
+                <img src="./images/logos/EnglandFA.png" alt="England FA Logo" class="float-left h-12 object-fit">
+                <h3 class="p-2 text-lg font-bold">England</h3>
+              </div>
+              <div class="row bg-teamcolor-england bg-opacity-50 font-bold">
+                <span>23 deals</span><span>€95.7m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Nike.svg" alt="Nike" class="mx-auto block h-11"><span>€40m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/BT.svg" alt="BT" class="mx-auto h-11"><span>€12m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Emirates.svg" alt="Emirates" class="mx-auto h-11"><span>€9.6m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Budweiser.svg" alt="Budweiser" class="mx-auto h-11"><span>€5.4m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Deliveroo.svg" alt="Deliveroo" class="mx-auto h-11"><span>€5.4m</span>
+              </div>
+            </div>
+            <div id="France" class="teamBox">
+              <div class="text-center bg-teamcolor-france overflow-y-auto" >
+                <img src="./images/logos/FFR.svg" alt="FFR Logo" class="float-left h-12 object-fit">
+                <h3 class="p-2 text-lg font-bold">France</h3>
+              </div>
+              <div class="row bg-teamcolor-france bg-opacity-50 font-bold">
+                <span>13 deals</span><span>€92m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Nike.svg" alt="Nike" class="mx-auto block h-11"><span>€50.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/credit-agricole.svg" alt="Credit Agricole" class="mx-auto h-11"><span>€8m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/pmu.svg" alt="Emirates" class="mx-auto h-11"><span>€8m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/edf.svg" alt="Emirates" class="mx-auto h-11"><span>€5.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/orange.svg" alt="Deliveroo" class="mx-auto h-11"><span>€5.5m</span>
+              </div>
+            </div>
+            <div id="Germany" class="teamBox">
+              <div class="text-center bg-teamcolor-germany overflow-y-auto" >
+                <img src="./images/logos/Deutscher_Fußball-Bund_logo.svg" alt="Germany Club logo" class="float-left h-12 object-fit">
+                <h3 class="p-2 text-lg font-bold">Germany</h3>
+              </div>
+              <div class="row bg-teamcolor-germany bg-opacity-50 font-bold border-0">
+                <span class="border-0">17 deals</span><span>€127.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Adidas.svg" alt="Adidas" class="mx-auto block h-11"><span>€50m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Volkswagen.svg" alt="Volkwagen" class="mx-auto h-11"><span>€27.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/bwin.svg" alt="Bwin" class="mx-auto h-11"><span>€12.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Samsung.svg" alt="Emirates" class="mx-auto h-11"><span>€7.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Commerzbank.svg" alt="Commerzbank" class="mx-auto h-11"><span>€3.5m</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid w-full grid-flow-col grid-cols-2 mt-10 mb-24 gap-4 mx-auto justify-items-center">
+            <div id="England" class="teamBox">
+              <div class="text-center bg-teamcolor-spain overflow-y-auto" >
+                <img src="./images/logos/Spain.png" alt="England FA Logo" class="float-left h-12 object-fit">
+                <h3 class="p-2 text-lg font-bold">Spain</h3>
+              </div>
+              <div class="row bg-teamcolor-spain bg-opacity-50 font-bold">
+                <span>14 deals</span><span>€39.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/Adidas.svg" alt="Adidas" class="mx-auto block h-11"><span>€20m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/finetwork.svg" alt="Finetwork" class="mx-auto h-11"><span>€4.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/seat-2.svg" alt="Seat" class="mx-auto h-11"><span>€3.7m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/halcon-viajes.svg" alt="Halcon Viajes" class="mx-auto h-11"><span>€1.5m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/iberia-airlines.svg" alt="Iberia" class="mx-auto h-11"><span>€1.5m</span>
+              </div>
+            </div>
+            <div id="England" class="teamBox">
+              <div class="text-center bg-teamcolor-italy overflow-y-auto" >
+                <img src="./images/logos/Italy.svg" alt="England FA Logo" class="float-left h-12 object-fit">
+                <h3 class="p-2 text-lg font-bold">Italy</h3>
+              </div>
+              <div class="row bg-teamcolor-italy bg-opacity-50 font-bold">
+                <span>25 deals</span><span>€42.7m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/puma-logo.svg" alt="Puma" class="mx-auto block h-11"><span>€18.9m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/tim.svg" alt="TIM" class="mx-auto h-11"><span>€3m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/eni-1.svg" alt="Eni" class="mx-auto h-11"><span>€3m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/fiat-3.svg" alt="Fiat" class="mx-auto h-11"><span>€3m</span>
+              </div>
+              <div class="row">
+                <img src="./images/logos/poste-italiane.svg" alt="Italienne Poste" class="mx-auto h-11"><span>€3m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-teal">
+        <div class="container pt-10 flex mx-auto">
+          <div class="w-1/3 h-80 overflow-visible relative p-2 bg-teal-light text-black border-2  border-black rounded-md transform -rotate-3 -translate-y-16 -translate-x-8 drop-shadow-xl">
+            <p class="text-black">Local markets are still the most important for National FAs when looking for sponsorship partners (excl. kit suppliers), with the exception of the English FA where over 50% of their sponsors are headquartered outside their home market (no one else has over 20%).</p>
+ 
+              <p class="text-black">It’s no surprise therefore that Germany, with its economic power and global brands generates the most sponsorship income, although France has the biggest kit deal. It is only England (Emirates, Budweiser) and Germany (Samsung) that have major non-local partners. Despite footballing success, both Spain and Italy have been unable to convert that into major sponsorship deals outside kit deals.</p>
+          </div>
+          <div class="w-2/3 mt-28 text-center">
+            <h2>Annual spend by sponsors registered country (excl. kit suppliers)</h2>
+            <canvas id="chart3" class="object-contain w-min"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-teal">
+        <div class="container pt-10 flex mx-auto">
+          <div class="w-1/2 pr-5 text-center">
+            <h2>Annual spend by sponsors registered country (excl. kit suppliers)</h2>
+            <canvas id="chart4" class="object-contain w-min"></canvas>
+          </div>
+          <div class="w-1/2 pl-5 text-center">
+            <h2>Annual spend by sponsors registered country (excl. kit suppliers)</h2>
+            <canvas id="chart4" class="object-contain w-min"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+      <script src="./js/charts_init.js"></script>
+
+    </body>
+  </html>

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@layer base {
+  h1 {
+    @apply text-4xl uppercase inline-block text-white border-b-2 mb-10 pb-5;
+  }
+  h2 {
+    @apply text-xl uppercase inline-block text-white border-b-2 mb-5 pb-2;
+  }
+  p{
+    @apply text-white mb-4;
+  }
+}
+
+@layer components {
+  .teamBox {
+    @apply w-64 border-2 border-white rounded-md bg-white bg-opacity-80;
+  }
+  .teamBox span, .teamBox img  {
+    @apply p-2 ;
+  }
+  .teamBox .row {
+    @apply grid-cols-2 w-full grid text-center border-t-2;
+  }
+  .teamBox .row span{
+    @apply border-l-2 block w-full align-middle my-auto h-full;
+  }
+
+
+  
+}
